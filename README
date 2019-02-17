@@ -6,6 +6,8 @@
 
 Please find below a walk through or steps taken to build the Web application
 
+********************IN AWS****************
+
 1. An AWS instance was created, and the following ports (HTTP, HTTPS, SSH and CUSTOM TCP RULE 8084) were enabled.
 
 2. On the AWS instance; an update was made on the instance using 
