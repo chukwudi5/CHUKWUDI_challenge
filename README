@@ -42,11 +42,16 @@ Please find below a walk through or steps taken to build the Web application
 ****************HOW TO RUN THE PROJECT*****************
 
 
-1. GIT URL    (Integrates well with jenkins)
+1. Project URL - HELLO WORLD
+http://100.27.22.103/
+
+2. GIT URL    (Integrates well with jenkins)
 
 https://github.com/chukwudi5/CHUKWUDI_challenge   
 
-2. Jenkins 
+3. Jenkins 
 URL: http://3.94.88.73:7070/
 username: chukwudi
 password: redhat
+
+
