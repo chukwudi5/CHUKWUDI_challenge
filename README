@@ -1,0 +1,50 @@
+#Description: Creating a scalable and static web application in AWS
+
+#Author: Chukwudi Stanley Onwumelu
+
+#Date: 2/17/2019
+
+Please find below a walk through or steps taken to build the Web application
+
+1. An AWS instance was created, and the following ports (HTTP, HTTPS, SSH and CUSTOM TCP RULE 8084) were enabled.
+
+2. On the AWS instance; an update was made on the instance using 
+#yum update -y
+
+3. Apache was installed on it using the command #yum install httpd -y 
+
+4. Since the ports in the security group were enabled alread, i ran the command #vi index.html so that i can input the code that was presented to me in the code challenge
+
+5. So i inputted the ip address of the aws instance on a browser to confirm my created webserver.
+
+************IN THE GITHUB***************
+1. I uploaded my codes and a pom.xml file to my GITHUB to enable a successful built in jenkins.
+
+**************IN THE JENKINS************
+
+1. I built a freestyle project
+2. Added the description (code_challenge)
+3. Inputted my GitHub project .....   url https://github.com/chukwudi5/CHUKWUDI_challenge/  
+4. Selected Git for my Source Code Management
+5. In the repositiries i pasted my repo....... URL https://github.com/chukwudi5/CHUKWUDI_challenge.git
+6. In credentials i selected none
+7. For the Branches to build i specified my */master
+8.For the Build Trigger i selected..... GitHub Hook trigger GITScm polling
+9. In Build..... 
+   #Select Invoke top-level Maven targets
+   #Goals .... clean compile package
+10. Apply and Save
+11. Select Build Now
+12. You will notice your project will successfully build and you can monitor the progress from the console output
+  
+****************HOW TO RUN THE PROJECT*****************
+
+
+1. GIT URL    (Integrates well with jenkins)
+
+    
+
+2. Jenkins 
+URL: http://3.94.88.73:7070/
+username: chukwudi
+password: redhat
